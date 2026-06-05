@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.slide{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-family: sans-serif, Arial;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+    background-image: url(https://historyuk.s3.eu-west-2.amazonaws.com/s3fs-public/2022-11/shutterstock_2190840355-min.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    padding-bottom: 150px;
+}
+
+.BotõesDoCarrosel{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn{
+    background-color: yellow;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 0px;
+    color: black;
+    font-weight: bold;
+    transition: 0,3s;
+    background: 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: antiquewhite;
+}
+
+button{
+    border: none;
+    background-color: green;
+    padding: 80px 80px 80px;
+}
+
+.CarroselContainer{
+    display: flex;
+    width: 200px;
+    height: 150px;
+
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    
+    scrollbar-width: none;
+    box-shadow: 0 0 10px;
+    
+}
+
+.CarroselContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.slide{
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: white;
+    border-radius: 14px;
+}
+h5{
+    text-align: center;
+    color: goldenrod;
+    text-decoration: underline;
+    font-size: 60px;
+    margin-bottom: auto;
+    padding-top: 15px;
+    
+}
